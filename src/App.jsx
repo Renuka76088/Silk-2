@@ -19,6 +19,8 @@ import ReviewsPage from './Pages/ReviewsPage'
 import AppointmentPage from './Pages/AppointmentPage'
 import GalleryPage from './Pages/GalleryPage'
 import Associates from './Pages/Associates'
+import Footer from './Components/Footer'
+import ScrollToTop from '../ScrollToTop'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,6 +29,7 @@ function App() {
     <>
 
     <BrowserRouter>
+    <ScrollToTop/>
     <Header/>
     <Routes>
       <Route path='/' element={<Landing/>}/>
@@ -47,7 +50,7 @@ function App() {
       <Route path='/media' element={<  GalleryPage/>}/>
       <Route path='/associates' element={<Associates/>}/>
     </Routes>
-    
+    <Footer/>
     </BrowserRouter>
      
     </>

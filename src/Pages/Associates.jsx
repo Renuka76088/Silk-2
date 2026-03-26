@@ -1,154 +1,168 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { MapPin, Building, Briefcase, Target, ExternalLink } from 'lucide-react';
-import { footer } from 'framer-motion/client';
+import { useState, useEffect } from "react";
 
-const Associates = () => {
-  // Points of Interest based on image_0.png
-  const points = [
-    { id: 1, name: "Parekh Fabrics", x: 20, y: 48, top: '48%', left: '20%' },
-    { id: 2, name: "Parekh Silk", x: 24, y: 56, top: '56%', left: '24%' },
-    { id: 3, name: "Parekh Rayon", x: 45, y: 56, top: '56%', left: '45%' },
-    { id: 4, name: "Parekh e-Trade Market (Textile)", x: 38, y: 68, top: '68%', left: '38%' },
-    { id: 5, name: "Parekh Linen", x: 62, y: 52, top: '52%', left: '62%' },
-    { id: 6, name: "Parekh Chamber of Textile", x: 35, y: 78, top: '78%', left: '35%' },
-    { id: 7, name: "Parekh Southern Polyfabrics", x: 40, y: 78, top: '78%', left: '40%' },
-  ];
+const locations = [
+  { id: 1, name: "Parekh Fabrics", city: "Ahmedabad", short: "Fabrics", x: 340, y: 495 },
+  { id: 2, name: "Parekh Silk", city: "Surat", short: "Silk", x: 350, y: 560 },
+  { id: 3, name: "Parekh Rayon", city: "Raipur", short: "Rayon", x: 498, y: 545 },
+  { id: 4, name: "Parekh Linen", city: "Kolkata", short: "Linen", x: 625, y: 525 },
+  { id: 5, name: "Parekh e-Trade Market", city: "Hyderabad", short: "e-Trade", x: 450, y: 635 },
+  { id: 6, name: "Parekh Chamber of Textile", city: "Bangalore", short: "Chamber", x: 415, y: 715 },
+  { id: 7, name: "Parekh Southern Polyfabrics", city: "Chennai", short: "Southern", x: 480, y: 715 },
+];
 
-  const [activePoint, setActivePoint] = useState(points[3]); // Default point to center
+const PIN_COLOR = "#8b1a1a";
+
+function Pin({ loc, index, active, onClick }) {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const t = setTimeout(() => setVisible(true), index * 120 + 100);
+    return () => clearTimeout(t);
+  }, [index]);
+
+  let labelX = loc.x;
+  let labelY = loc.y - 35;
+  let textAnchor = "middle";
+
+  if (loc.id === 6) {
+    labelX = loc.x - 40;
+    labelY = loc.y - 5;
+    textAnchor = "end";
+  } else if (loc.id === 7) {
+    labelX = loc.x + 40;
+    labelY = loc.y - 5;
+    textAnchor = "start";
+  }
 
   return (
-    <>
-    <div className="min-h-screen bg-[#111111] text-zinc-100 font-sans selection:bg-amber-500/40 overflow-x-hidden relative">
-      
-      {/* Dynamic Background */}
-      <div className="absolute inset-0 pointer-events-none z-0">
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-amber-600/5 blur-[120px] rounded-full"></div>
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-white/5 blur-[100px] rounded-full"></div>
-        <div className="absolute inset-0 opacity-[0.02] bg-[url('https://img.freepik.com/premium-vector/map-name-india-orange-yellow-vector-illustration_968957-10807.jpg?w=1060')]"></div>
-      </div>
+    <g
+      onClick={() => onClick(loc.id)}
+      style={{ opacity: visible ? 1 : 0, cursor: "pointer" }}
+    >
+      {/* 🔴 Blink dot */}
+   <circle cx={loc.x} cy={loc.y} r="6" fill="#d32f2f">
 
-      <div className="max-w-7xl mx-auto px-6 py-12 relative z-10">
-        
-        {/* Header Section */}
-        <header className="flex flex-col md:flex-row justify-between items-center gap-6 mb-16 border-b border-zinc-900 pb-10">
-          <div>
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center border border-zinc-800">
-                <Building size={20} className="text-amber-500" />
-              </div>
-              <h1 className="text-4xl font-serif text-white tracking-tight">HC Parekh & <span className="italic text-amber-500">Associates</span></h1>
-            </div>
-            <p className="mt-3 text-zinc-600 uppercase tracking-widest text-[11px] font-bold">Leading Textile Industry Partners | Gujarat Hub</p>
-          </div>
-          
-          <div className="flex gap-4">
-             <a href="https://www.hcparekh.com" target="_blank" rel="noopener noreferrer" className="px-6 py-3 border border-zinc-800 rounded-xl text-xs uppercase tracking-widest font-bold text-zinc-300 hover:border-amber-500 hover:text-white transition-all">Visit Our Portal</a>
-             <button className="px-6 py-3 bg-white text-black rounded-xl text-xs uppercase tracking-widest font-bold hover:bg-amber-600 transition-all">Connect with Us</button>
-          </div>
-        </header>
+        <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite" />
+      </circle>
 
-        {/* Content Section with Map & Panel */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
-          
-          {/* Left Panel - Dynamic Data (4 Columns) */}
-          <motion.div 
-            key={activePoint.id}
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="md:col-span-4 bg-zinc-900 p-8 rounded-3xl border border-zinc-800 space-y-10 shadow-2xl"
-          >
-             <div className="flex gap-4 items-center">
-                <div className="w-14 h-14 rounded-3xl bg-amber-500/10 flex items-center justify-center border border-amber-500/30">
-                   <Target className="text-amber-500" size={28}/>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-serif text-white">{activePoint.name}</h3>
-                  <p className="text-xs uppercase tracking-widest text-zinc-500">Current Industry Hub Point</p>
-                </div>
-             </div>
+      {/* Glow */}
+      <circle cx={loc.x} cy={loc.y} r="10" fill="none" stroke="#d32f2f">
+        <animate attributeName="r" values="10;22" dur="1.5s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.7;0" dur="1.5s" repeatCount="indefinite" />
+      </circle>
 
-             <div className="grid grid-cols-2 gap-6 pt-10 border-t border-zinc-800/50 text-zinc-500 text-sm">
-                <div className="space-y-1">
-                   <Briefcase size={16} />
-                   <p className="font-medium text-white">Service: Supply Chain</p>
-                   <p className="text-xs">Connecting textile centers</p>
-                </div>
-                <div className="space-y-1">
-                   <ExternalLink size={16} />
-                   <p className="font-medium text-white">Status: Introduced</p>
-                   <p className="text-xs">Live and Operational</p>
-                </div>
-             </div>
-
-             <div className="pt-10 border-t border-zinc-800/50 space-y-4">
-                <p className="text-zinc-600 text-[10px] uppercase tracking-[0.3em] font-bold">All Operational Hubs</p>
-                <div className="flex gap-2 flex-wrap">
-                  {points.map((p) => (
-                    <button key={p.id} onClick={() => setActivePoint(p)} className={`px-4 py-1.5 border border-zinc-800 rounded-full text-[10px] uppercase font-bold tracking-widest hover:border-amber-500 ${activePoint.id === p.id ? 'bg-amber-500 text-black' : 'text-zinc-400'}`}>
-                      {p.name}
-                    </button>
-                  ))}
-                </div>
-             </div>
-          </motion.div>
-
-          {/* Right Panel - India Map with Interactivity (8 Columns) */}
-          <div className="md:col-span-8 bg-black rounded-3xl border border-zinc-800 p-1 relative group overflow-hidden shadow-2xl">
-            <motion.div 
-                initial={{ opacity: 0 }} 
-                animate={{ opacity: 1 }} 
-                className="w-full aspect-[4/5] bg-[url('https://maps.googleapis.com/maps/api/staticmap?center=22.9,80.6&zoom=5&size=800x1000&maptype=satellite&key=YOUR_API_KEY')] bg-cover bg-center rounded-3xl opacity-60 group-hover:opacity-100 transition-opacity duration-1000 grayscale group-hover:grayscale-0"
-            />
-            {/* Background Texture Overlay for Map */}
-            <div className="absolute inset-0 bg-[url('https://img.freepik.com/premium-vector/map-name-india-orange-yellow-vector-illustration_968957-10807.jpg?w=1060')] opacity-10 rounded-3xl pointer-events-none"></div>
-            
-            {/* Point Markers */}
-            <AnimatePresence>
-                {points.map((p) => (
-                  <motion.div
-                    key={p.id}
-                    className="absolute z-10 cursor-pointer"
-                    style={{ top: p.top, left: p.left }}
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    whileHover={{ scale: 1.2 }}
-                    onClick={() => setActivePoint(p)}
-                  >
-                    {/* Ripple Effect for Active Point */}
-                    {activePoint.id === p.id && (
-                        <motion.div animate={{ scale: [1, 1.5, 1], opacity: [0.3, 0.1, 0.3] }} transition={{ repeat: Infinity, duration: 1.5 }} className="absolute -inset-2 rounded-full border-2 border-amber-500"></motion.div>
-                    )}
-                    
-                    {/* The Point Marker */}
-                    <div className={`w-3 h-3 rounded-full ${activePoint.id === p.id ? 'bg-amber-500' : 'bg-white'} border border-black shadow-lg shadow-black/30`}></div>
-                    
-                    {/* Point Name (Glow on Hover/Active) */}
-                    <p className={`absolute top-4 left-1/2 -translate-x-1/2 -translate-y-full text-[10px] uppercase font-bold tracking-widest py-0.5 px-2 rounded-md whitespace-nowrap ${activePoint.id === p.id ? 'bg-black text-amber-500 border border-amber-500/50' : 'bg-black/50 text-white/70 border border-white/10 opacity-60 group-hover:opacity-100'}`}>
-                        {p.name}
-                    </p>
-                  </motion.div>
-                ))}
-            </AnimatePresence>
-            
-            {/* Simple Map Footer with Info */}
-            <div className="absolute bottom-4 left-4 p-4 bg-zinc-900/50 backdrop-blur-md rounded-2xl border border-white/10 flex items-center gap-3">
-               <MapPin className="text-zinc-600" />
-               <p className="text-zinc-500 text-[10px] uppercase tracking-widest font-bold">India Operational Map • Central Hub: Surat</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Footer Branding */}
-        <footer className="mt-24 pt-10 border-t border-zinc-900 text-center">
-          <p className="text-[10px] tracking-[1.5em] text-zinc-700 uppercase font-bold">Pareekh Textile Collective &bull; Digital Heritage</p>
-      
-    </footer>
-    </div>
-    </div>
-
-    </>
+      {/* ✅ TEXT (NAME + CITY) */}
+      <text
+        x={labelX}
+        y={labelY}
+        textAnchor={textAnchor}
+        fontSize="14"
+        fontWeight="700"
+        fill="#1a237e"
+      >
+        <tspan x={labelX}>{loc.name}</tspan>
+        <tspan x={labelX} dy="16" fontSize="12" fill="#444">
+          {loc.city}
+        </tspan>
+      </text>
+    </g>
   );
-};
+}
 
-export default Associates;
+export default function Associates() {
+  const [active, setActive] = useState(null);
+
+  return (
+<>
+
+{/* ✅ Container mein padding-top add kiya hai taaki header ke niche se shuru ho */}
+{/* 🟢 Parent Container with Black Background */}
+<div style={{ 
+  backgroundColor: "#000000", // Poora piche ka background black
+  minHeight: "120vh", // Taaki scroll space mile
+  width: "100%",
+  margin: "0",
+  padding: "0"
+}}>
+  <div style={{ 
+    maxWidth: "900px", 
+    margin: "0 auto", 
+    paddingTop: "120px", // Header height ke hisaab se space
+    position: "relative",
+    zIndex: "10" 
+  }}>
+
+    <svg
+      viewBox="0 0 1000 1000"
+      style={{
+        width: "100%",
+        display: "block",
+        margin: "0 auto",
+        overflow: "visible",
+        filter: "drop-shadow(0 20px 50px rgba(0,0,0,0.5))" // Black bg par depth ke liye
+      }}
+    >
+      {/* 🔲 OUTER BORDER BOX (Ab isme White Background hai) */}
+      <rect
+        x="20"
+        y="20"
+        width="960"
+        height="960"
+        fill="#FFFFFF" // ⬅️ Box ke andar ka background white
+        stroke="#C5A27D" 
+        strokeWidth="2"
+        rx="10" // Halka sa rounded corners premium dikhte hain
+      />
+
+      {/* 🏷️ HEADING */}
+      <text
+        x="500"
+        y="80"
+        textAnchor="middle"
+        fontSize="32"
+        fontWeight="900"
+        fill="#4A4238"
+        fontFamily="Arial Black, sans-serif"
+      >
+        HC PAREKH & ASSOCIATES
+      </text>
+
+      <text
+        x="500"
+        y="115"
+        textAnchor="middle"
+        fontSize="16"
+        fill="#C5A27D"
+        fontWeight="bold"
+        letterSpacing="3"
+      >
+        WWW.HCPAREKH.COM
+      </text>
+
+      {/* 🗺️ IMAGE (India Map Outline) */}
+      <image
+        href="https://img.freepik.com/premium-vector/vector-map-black-outline-india-vector-illustration_686498-514.jpg?w=1060"
+        x="50"
+        y="140"
+        width="900"
+        height="750"
+        preserveAspectRatio="xMidYMid meet"
+        opacity="0.15" // Map ko thoda aur subtle kiya taaki pins highlight hon
+      />
+
+      {/* Pins Mapping */}
+      {locations.map((loc, i) => (
+        <Pin
+          key={loc.id}
+          loc={loc}
+          index={i}
+          active={active === loc.id}
+          onClick={setActive}
+        />
+      ))}
+    </svg>
+  </div>
+</div>
+</>
+  );
+}

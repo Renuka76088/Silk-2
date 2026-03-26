@@ -39,55 +39,103 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-xl border-b border-amber-900/10 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
         {/* Logo */}
-        <Link 
-          to="/" 
-          className="text-3xl md:text-4xl font-light tracking-[0.5em] text-white hover:text-amber-200 transition-colors duration-300"
-        >
-          PAREEKH
-        </Link>
+      <Link to="/" className="z-[130] flex items-center no-underline group">
+  {/* 🔘 Silver "P" Box with Metallic Shine */}
+  <div 
+    style={{
+      background: 'linear-gradient(135deg, #f8f9fa 0%, #d1d5db 50%, #adb5bd 100%)',
+      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1), inset 0 1px 2px rgba(255, 255, 255, 0.8)'
+    }}
+    className="w-[42px] h-[42px] md:w-[48px] md:h-[48px] border-2 border-[#94a3b8] rounded-xl flex items-center justify-center mr-3 shrink-0 transition-all duration-300 group-hover:scale-105 group-hover:border-[#cbd5e1]"
+  >
+    <span 
+      style={{
+        textShadow: '1px 1px 0px rgba(255,255,255,0.5)'
+      }}
+      className="text-[#475569] font-black text-2xl md:text-3xl leading-none"
+    >
+      P
+    </span>
+  </div>
+
+  {/* 🔘 Text Section (Silver/Steel Palette) */}
+  <div className="flex flex-col justify-center">
+    <h1 className="flex items-center text-xl md:text-2xl font-black tracking-tighter uppercase leading-none">
+      <span className="text-white">PAREKH</span>
+      <span className="text-yellow-200 ml-1">SILK</span>
+    </h1>
+    <span className="text-[9px] md:text-[11px] font-bold tracking-[0.3em] text-yellow-200 uppercase mt-1">
+      SURAT • GJ
+    </span>
+  </div>
+</Link>
 
         {/* Desktop Menu */}
-        <nav className="hidden lg:flex items-center space-x-12">
-          {mainMenu.map((item) => (
-            item.isDropdown ? (
-              <div 
-                key={item.name}
-                className="relative group"
-                onMouseEnter={() => setIsProductsOpen(true)}
-                onMouseLeave={() => setIsProductsOpen(false)}
-              >
-                <span className="text-base uppercase tracking-wider text-gray-200 hover:text-amber-200 transition-colors flex items-center gap-1 cursor-pointer">
-                  {item.name}
-                  <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                  </svg>
-                </span>
+  <nav className="hidden lg:flex items-center space-x-12">
+  {mainMenu.map((item) => (
+    item.isDropdown ? (
+      <div 
+        key={item.name}
+        className="relative group py-4" // 'py-4' acts as a bridge so menu doesn't close
+      >
+        <span className="text-base uppercase tracking-wider text-gray-200 hover:text-amber-200 transition-colors flex items-center gap-1 cursor-pointer">
+          {item.name}
+          <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </span>
 
-                {isProductsOpen && (
-                  <div className="absolute top-full left-0 mt-4 w-80 bg-black/85 backdrop-blur-lg border border-amber-900/20 rounded-xl shadow-2xl py-5 px-6 overflow-y-auto max-h-[70vh]">
-                    {productsDropdown.map((sub) => (
-                      <Link
-                        key={sub.name}
-                        to={sub.path}
-                        className="block py-3 text-base text-gray-200 hover:text-amber-200 transition-colors border-b border-amber-900/10 last:border-none hover:bg-amber-900/20 rounded-md"
-                      >
-                        {sub.name}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ) : (
+        {/* Dropdown Container: Full Screen Height */}
+        <div className="absolute top-full left-0 w-80 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200]">
+          <div 
+            className="bg-white border-r border-gray-200 shadow-2xl py-8 px-6 overflow-y-auto h-[80vh] "
+            style={{ 
+              scrollbarWidth: 'none', 
+              msOverflowStyle: 'none' 
+            }}
+          >
+            {/* Header inside dropdown for better B2B UI */}
+            <div className="mb-6 pb-2 border-b border-gray-100">
+              <span className="text-[10px] font-bold tracking-[0.2em] text-gray-400 uppercase">
+                Browse Categories
+              </span>
+            </div>
+
+            {productsDropdown.map((sub) => (
               <Link
-                key={item.name}
-                to={item.path}
-                className="text-base uppercase tracking-wider text-gray-200 hover:text-amber-200 transition-colors duration-300"
+                key={sub.name}
+                to={sub.path}
+                className="block py-4 text-sm font-semibold text-gray-800 hover:text-[#C5A27D] transition-all border-b border-gray-50 last:border-none hover:pl-2"
               >
-                {item.name}
+                {sub.name}
               </Link>
-            )
-          ))}
-        </nav>
+            ))}
+            
+            {/* Bottom Space to ensure last item is clickable */}
+            <div className="h-40"></div>
+          </div>
+        </div>
+      </div>
+    ) : (
+      <Link
+        key={item.name}
+        to={item.path}
+        className="text-base uppercase tracking-wider text-gray-200 hover:text-amber-200 transition-colors duration-300"
+      >
+        {item.name}
+      </Link>
+    )
+  ))}
+</nav>
+
+{/* Inline CSS to hide scrollbar strip globally or specifically */}
+<style>
+  {`
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+  `}
+</style>
 
         {/* Hamburger Button */}
         <button
