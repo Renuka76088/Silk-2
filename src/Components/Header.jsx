@@ -21,18 +21,18 @@ const Header = () => {
 
   const productsDropdown = [
    
-    { name: 'Product Photo Gallery (Silk Sarees)', path: '/gallery-sarees' },
+    { name: 'Product Photo Gallery', path: '/gallery-sarees' },
     { name: 'Our Management', path: '/management' },
-    { name: 'Trade Enquiry (e-Form)', path: '/trade-enquiry' },
+    { name: 'Trade Enquiry', path: '/trade-enquiry' },
     { name: 'e-Quotation', path: '/e-quotation' },
     { name: 'e-Auction', path: '/e-auction' },
     { name: 'Tender & Contract', path: '/tender-contract' },
     { name: 'Career Page', path: '/careers' },
     { name: 'Circular', path: '/circular' },
     { name: 'Customer Review', path: '/reviews' },
-    { name: 'Visit with Appointment (e-Form)', path: '/appointment' },
+    { name: 'Visit with Appointment', path: '/appointment' },
     { name: 'Media Gallery', path: '/media' },
-    { name: 'Our Textile Associates (India Map)', path: '/associates' },
+    { name: 'Our Textile Associates', path: '/associates' },
   ];
 
   return (
@@ -60,10 +60,10 @@ const Header = () => {
 
   {/* 🔘 Text Section (Silver/Steel Palette) */}
   <div className="flex flex-col justify-center">
-    <h1 className="flex items-center text-xl md:text-2xl font-black tracking-tighter uppercase leading-none">
-      <span className="text-white">PAREKH</span>
-      <span className="text-yellow-200 ml-1">SILK</span>
-    </h1>
+   <h1 className="flex items-center gap-x-1 text-xl md:text-2xl font-black tracking-tighter uppercase leading-none">
+  <span className="text-white">PAREKH</span>
+  <span className="text-yellow-200">SILK</span>
+</h1>
     <span className="text-[9px] md:text-[11px] font-bold tracking-[0.3em] text-yellow-200 uppercase mt-1">
       SURAT • GJ
     </span>
