@@ -23,7 +23,7 @@ const OurManagement = () => {
             THE THREAD<br />OF LEADERSHIP
           </h1>
           <p className="text-2xl md:text-3xl font-light text-amber-200/80 tracking-widest">
-            Where heritage meets vision — Pareekh Silk Textile is managed with the same reverence we give to every mulberry thread.
+            Where heritage meets vision — PAREKH Silk Textile is managed with the same reverence we give to every mulberry thread.
           </p>
         </div>
       </section>
@@ -35,7 +35,7 @@ const OurManagement = () => {
             We Don’t Just Manage Silk.<br />We Honour It.
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed font-light">
-            At Pareekh Textile, management is not about numbers — it’s about preserving three decades of legacy while pushing the boundaries of pure mulberry excellence. Every decision, from cocoon sourcing to final drape, is taken with one question: “Will this make the silk prouder?”
+            At PAREKH Textile, management is not about numbers — it’s about preserving three decades of legacy while pushing the boundaries of pure mulberry excellence. Every decision, from cocoon sourcing to final drape, is taken with one question: “Will this make the silk prouder?”
           </p>
         </div>
       </section>
@@ -49,7 +49,7 @@ const OurManagement = () => {
             {/* Founder */}
             <div className="group relative bg-black/60 border border-amber-900/40 rounded-3xl p-8 hover:border-amber-400/60 transition-all duration-700">
               <div className="h-2 w-16 bg-amber-400 mb-8 rounded"></div>
-              <h4 className="text-3xl font-light text-amber-50 mb-2">Shri Rajesh Pareek</h4>
+              <h4 className="text-3xl font-light text-amber-50 mb-2">Shri Rajesh Parek</h4>
               <p className="text-amber-300 mb-6">Founder & Vision Keeper</p>
               <p className="text-gray-300 leading-relaxed">
                 The man who turned a family passion into India’s most respected pure silk house. 30+ years of weaving dreams into reality.
@@ -59,7 +59,7 @@ const OurManagement = () => {
             {/* Creative Director */}
             <div className="group relative bg-black/60 border border-amber-900/40 rounded-3xl p-8 hover:border-amber-400/60 transition-all duration-700 lg:mt-12">
               <div className="h-2 w-16 bg-amber-400 mb-8 rounded"></div>
-              <h4 className="text-3xl font-light text-amber-50 mb-2">Mrs. Meera Pareek</h4>
+              <h4 className="text-3xl font-light text-amber-50 mb-2">Mrs. Meera Parek</h4>
               <p className="text-amber-300 mb-6">Creative Director & Heritage Curator</p>
               <p className="text-gray-300 leading-relaxed">
                 The soul who ensures every zari, motif and drape carries the timeless elegance of Banarasi & Kanchipuram traditions.
@@ -69,10 +69,10 @@ const OurManagement = () => {
             {/* Production Head */}
             <div className="group relative bg-black/60 border border-amber-900/40 rounded-3xl p-8 hover:border-amber-400/60 transition-all duration-700">
               <div className="h-2 w-16 bg-amber-400 mb-8 rounded"></div>
-              <h4 className="text-3xl font-light text-amber-50 mb-2">Mr. Arjun Pareek</h4>
+              <h4 className="text-3xl font-light text-amber-50 mb-2">Mr. Arjun Parek</h4>
               <p className="text-amber-300 mb-6">Head of Production & Quality</p>
               <p className="text-gray-300 leading-relaxed">
-                Ensures every meter of silk meets the uncompromising standards that have made Pareekh a name of trust for three decades.
+                Ensures every meter of silk meets the uncompromising standards that have made PAREKH a name of trust for three decades.
               </p>
             </div>
           </div>
@@ -81,7 +81,7 @@ const OurManagement = () => {
 
       {/* The Silk Process – Creative Flowing Journey */}
       <section className="py-20 px-6 md:px-12 relative">
-        <h3 className="text-4xl font-light text-center text-amber-100 mb-16">The Pareekh Process</h3>
+        <h3 className="text-4xl font-light text-center text-amber-100 mb-16">The PAREKH Process</h3>
         
         <div className="max-w-6xl mx-auto space-y-16 relative before:absolute before:left-1/2 before:top-10 before:bottom-10 before:w-px before:bg-amber-900/50">
           {[
@@ -108,7 +108,7 @@ const OurManagement = () => {
       <section className="py-24 px-6 text-center relative border-t border-amber-900/30">
         <div className="max-w-3xl mx-auto">
           <p className="text-4xl md:text-5xl font-light leading-tight text-amber-100 mb-10">
-            At Pareekh Textile,<br />
+            At PAREKH Textile,<br />
             Management is not control.<br />
             It is devotion.
           </p>

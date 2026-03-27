@@ -24,7 +24,7 @@ const TradeEnquiry = () => {
             Join the Legacy of Pure Silk Excellence
           </p>
           <p className="mt-6 text-lg text-gray-300 max-w-3xl mx-auto">
-            Become an authorized partner of Pareekh Textile — where premium silk meets trusted trade relationships.
+            Become an authorized partner of PAREKH Textile — where premium silk meets trusted trade relationships.
           </p>
         </div>
       </section>

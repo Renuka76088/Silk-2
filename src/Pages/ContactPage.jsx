@@ -18,7 +18,7 @@ const ContactPage = () => {
       <section className="relative py-16 md:py-24 px-6 md:px-12 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-extralight tracking-tight text-amber-50 mb-4">
-            Pareekh Silk
+            PAREKH Silk
           </h1>
           <p className="text-xl md:text-2xl font-light text-amber-200/80 uppercase tracking-wider mb-6">
             Whisper Your Vision
@@ -46,7 +46,7 @@ const ContactPage = () => {
                   style={{ border: 0 }}
                   allowFullScreen=""
                   loading="lazy"
-                  title="Pareekh Silk - SURAT, GJ"
+                  title="PAREKH Silk - SURAT, GJ"
                   className="grayscale-[0.3] hover:grayscale-0 transition-all duration-700"
                 ></iframe>
               </div>
@@ -61,8 +61,8 @@ const ContactPage = () => {
                 <svg className="w-6 h-6 text-amber-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <a href="mailto:hello@pareekhsilk.com" className="hover:text-amber-200 transition-colors">
-                  hello@pareekhsilk.com
+                <a href="mailto:hello@PAREKHsilk.com" className="hover:text-amber-200 transition-colors">
+                  hello@PAREKHsilk.com
                 </a>
               </div>
               <div className="flex items-center gap-4">
@@ -86,7 +86,7 @@ const ContactPage = () => {
               <a href="https://wa.me/919876543210" className="text-amber-200 hover:text-amber-100 transition-colors uppercase tracking-wider text-sm font-medium">
                 WhatsApp
               </a>
-              <a href="https://instagram.com/pareekhsilk" className="text-amber-200 hover:text-amber-100 transition-colors uppercase tracking-wider text-sm font-medium">
+              <a href="https://instagram.com/PAREKHsilk" className="text-amber-200 hover:text-amber-100 transition-colors uppercase tracking-wider text-sm font-medium">
                 Instagram
               </a>
             </div>

@@ -52,7 +52,7 @@ const GalleryPage = () => {
       type: 'image', 
       category: 'Artisans', 
       title: 'Master Weaver at Work', 
-      desc: 'The dedication behind every inch of Pareekh Silk.',
+      desc: 'The dedication behind every inch of PAREKH Silk.',
       url: 'https://img.freepik.com/free-photo/fabric-waves-dance-pastel-colors-mimicking-gentle-flow-serene-sea_91128-4509.jpg?ga=GA1.1.124606815.1772781809&semt=ais_hybrid&w=740&q=80' 
     },
   ];
@@ -97,7 +97,7 @@ const GalleryPage = () => {
               transition={{ delay: 0.2 }}
               className="text-7xl md:text-8xl font-serif tracking-tighter leading-none"
             >
-              Pareekh <span className="italic text-zinc-500 font-light underline decoration-zinc-800 underline-offset-8">Silk.</span>
+              PAREKH <span className="italic text-zinc-500 font-light underline decoration-zinc-800 underline-offset-8">Silk.</span>
             </motion.h1>
 
             {/* Category Filter - Premium Pills */}

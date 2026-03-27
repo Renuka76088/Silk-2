@@ -13,7 +13,7 @@ const AboutUs = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-amber-950/30 via-black to-black"></div>
         <div className="relative z-10 max-w-6xl mx-auto text-center">
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-extralight tracking-[-0.05em] text-amber-50 leading-none animate-fade-in">
-            PAREEKH
+            PAREKH
           </h1>
           <p className="mt-6 text-3xl md:text-5xl font-light text-amber-200/70 tracking-widest uppercase">
             Silk. Reimagined.
@@ -31,11 +31,11 @@ const AboutUs = () => {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           <div className="order-2 md:order-1 space-y-10">
             <h2 className="text-5xl md:text-7xl font-light tracking-tight text-amber-100">
-              About Parekh Silk
+              About PAREKH Silk
               Woven for the World.
             </h2>
             <p className="text-xl leading-relaxed text-gray-300">
-              Three decades ago, in the pulse of Madhya Pradesh, Pareekh began not as a business, but as an obsession with what silk could truly become. We didn't follow looms — we questioned them. Why blend when purity sings louder? Why mass-produce when mastery lingers?
+              Three decades ago, in the pulse of Madhya Pradesh, PAREKH began not as a business, but as an obsession with what silk could truly become. We didn't follow looms — we questioned them. Why blend when purity sings louder? Why mass-produce when mastery lingers?
             </p>
             <p className="text-xl leading-relaxed text-gray-300">
               Today, we source the rarest mulberry cocoons, collaborate with weavers who still tie knots by memory, and finish each piece like it's destined for eternity — because it is.

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const PareekhSilkBanner = () => {
+const PAREKHSilkBanner = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
@@ -48,7 +48,7 @@ const PareekhSilkBanner = () => {
           className={`text-6xl md:text-8xl lg:text-[10rem] leading-none font-extralight tracking-[0.6em] ${current.textColor} mb-4`}
           style={{ fontFamily: 'Georgia, serif' }}
         >
-          PAREEKH
+          PAREKH
         </h1>
         
         <p className={`text-3xl md:text-5xl lg:text-6xl font-light tracking-widest ${current.accent} mb-8`}>
@@ -85,4 +85,4 @@ const PareekhSilkBanner = () => {
   );
 };
 
-export default PareekhSilkBanner;
+export default PAREKHSilkBanner;

@@ -8,7 +8,7 @@ const reviews = [
     name: "Ananya Iyer",
     location: "Chennai, Tamil Nadu",
     rating: 5,
-    comment: "The pure Kanchipuram silk from Pareekh has a drape that standard silks simply can't match. It feels like a second skin, incredibly soft and luxurious.",
+    comment: "The pure Kanchipuram silk from PAREKH has a drape that standard silks simply can't match. It feels like a second skin, incredibly soft and luxurious.",
     product: "Kanchipuram Heritage Collection",
     img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400"
   },
@@ -17,7 +17,7 @@ const reviews = [
     name: "Vikram Malhotra",
     location: "New Delhi",
     rating: 5,
-    comment: "Sourced Banarasi silk for my boutique. The interplay of gold threads (Zari) with the silk base is masterfully done. Pareekh maintains exceptional consistency.",
+    comment: "Sourced Banarasi silk for my boutique. The interplay of gold threads (Zari) with the silk base is masterfully done. PAREKH maintains exceptional consistency.",
     product: "Banarasi Brocade - Wholesale",
     img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400"
   },
@@ -44,7 +44,7 @@ const reviews = [
     name: "Meenakshi Das",
     location: "Kolkata, West Bengal",
     rating: 5,
-    comment: "The Tussar silk has this beautiful, natural gold hue. You can feel the authenticity of the weave. Pareekh textiles are a cut above the rest.",
+    comment: "The Tussar silk has this beautiful, natural gold hue. You can feel the authenticity of the weave. PAREKH textiles are a cut above the rest.",
     product: "Tussar Silk Handloom",
     img: "https://images.unsplash.com/photo-1521119989659-a83eee488004?q=80&w=400"
   }
@@ -118,7 +118,7 @@ const ReviewsPage = () => {
             transition={{ delay: 0.4 }}
             className="mt-10 text-zinc-500 text-sm tracking-[0.1em] max-w-xl mx-auto uppercase font-medium leading-relaxed"
           >
-            Real stories, master weaves. How Pareekh Textiles redefines luxury for designers and patrons across India.
+            Real stories, master weaves. How PAREKH Textiles redefines luxury for designers and patrons across India.
           </motion.p>
         </header>
 
@@ -181,7 +181,7 @@ const ReviewsPage = () => {
             <Award size={20} className="text-amber-500" />
           </div>
           <p className="text-[10px] tracking-[1em] text-zinc-700 uppercase font-bold">
-            PAREEKH TEXTILE COLLECTIVE &bull; GUJARAT HUB
+            PAREKH TEXTILE COLLECTIVE &bull; GUJARAT HUB
           </p>
         </footer>
       </div>

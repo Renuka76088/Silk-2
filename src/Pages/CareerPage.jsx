@@ -33,7 +33,7 @@ const CareerPage = () => {
             transition={{ delay: 0.4 }}
             className="mt-8 text-zinc-500 uppercase tracking-[0.2em] text-xs font-medium"
           >
-            Explore opportunities to grow with Pareekh Collective
+            Explore opportunities to grow with PAREKH Collective
           </motion.p>
         </div>
       </section>
@@ -80,7 +80,7 @@ const CareerPage = () => {
 
             <div className="mt-12 pt-8 border-t border-zinc-800 flex justify-between items-center">
                <p className="text-[10px] text-zinc-600 uppercase tracking-widest font-medium italic">Hiring via 3-Round Interview Process</p>
-               <a href="mailto:hemant.parekh2012@gmail.com" className="bg-white text-black px-8 py-4 rounded-2xl font-bold uppercase tracking-widest text-xs hover:bg-amber-500 transition-all flex items-center gap-2 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.1)]">Apply Now <ArrowRight size={14} /></a>
+               <a href="mailto:hemant.PAREKH2012@gmail.com" className="bg-white text-black px-8 py-4 rounded-2xl font-bold uppercase tracking-widest text-xs hover:bg-amber-500 transition-all flex items-center gap-2 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.1)]">Apply Now <ArrowRight size={14} /></a>
             </div>
           </motion.div>
 
@@ -122,7 +122,7 @@ const CareerPage = () => {
                 <FileText className="text-amber-200" />
                 <p className="text-xs text-zinc-500 leading-tight italic uppercase tracking-widest">Submit Quotation in PDF format including payment terms & conditions.</p>
               </div>
-              <a href="mailto:hemant.parekh2012@gmail.com" className="bg-amber-600 text-black px-8 py-4 rounded-xl font-bold uppercase tracking-widest text-[10px] hover:bg-white transition-all">Submit Quotation</a>
+              <a href="mailto:hemant.PAREKH2012@gmail.com" className="bg-amber-600 text-black px-8 py-4 rounded-xl font-bold uppercase tracking-widest text-[10px] hover:bg-white transition-all">Submit Quotation</a>
             </div>
           </motion.div>
 
@@ -139,8 +139,8 @@ const CareerPage = () => {
               
               <div className="pt-6 border-t border-zinc-100 flex flex-col gap-2">
                 <p className="text-[10px] uppercase tracking-widest text-zinc-400 font-bold">Email CV To:</p>
-                <a href="mailto:hemant.parekh2012@gmail.com" className="text-lg font-medium hover:text-amber-700 transition-colors flex items-center gap-2">
-                  <Mail size={16}/> hemant.parekh2012@gmail.com
+                <a href="mailto:hemant.PAREKH2012@gmail.com" className="text-lg font-medium hover:text-amber-700 transition-colors flex items-center gap-2">
+                  <Mail size={16}/> hemant.PAREKH2012@gmail.com
                 </a>
               </div>
             </div>
@@ -156,14 +156,14 @@ const CareerPage = () => {
              <ul className="space-y-4 text-[11px] text-zinc-500 leading-relaxed uppercase tracking-widest">
                 <li className="flex gap-2 font-medium"><span className="text-amber-200">•</span> We are NOT a placement consultancy.</li>
                 <li className="flex gap-2 font-medium"><span className="text-amber-200">•</span> Influencers are NOT responsible for marketing.</li>
-                <li className="flex gap-2 font-medium"><span className="text-amber-200">•</span> Ad material will be provided by Pareekh Collective.</li>
+                <li className="flex gap-2 font-medium"><span className="text-amber-200">•</span> Ad material will be provided by PAREKH Collective.</li>
              </ul>
           </div>
 
           {/* Branding Sidebar */}
           <div className="text-center py-12">
             <div className="h-[1px] w-24 bg-zinc-900 mx-auto mb-6"></div>
-            <p className="text-[10px] tracking-[0.8em] text-zinc-700 uppercase font-bold">Pareekh Collective &copy; 2026</p>
+            <p className="text-[10px] tracking-[0.8em] text-zinc-700 uppercase font-bold">PAREKH Collective &copy; 2026</p>
           </div>
         </div>
       </div>

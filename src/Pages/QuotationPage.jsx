@@ -48,7 +48,7 @@ const QuotationPage = () => {
           {/* Left Side: Summary / Trust Factors */}
           <div className="lg:col-span-1 space-y-8">
             <div className="bg-zinc-900/40 backdrop-blur-md border border-zinc-800 p-8 rounded-3xl">
-              <h3 className="text-amber-200 font-serif text-2xl mb-4">Why Pareekh Silk?</h3>
+              <h3 className="text-amber-200 font-serif text-2xl mb-4">Why PAREKH Silk?</h3>
               <ul className="space-y-6">
                 <li className="flex gap-4">
                   <div className="text-amber-200 mt-1"><Anchor size={18} /></div>
@@ -125,7 +125,7 @@ const QuotationPage = () => {
 
         {/* Decorative Footer */}
         <div className="mt-20 text-center text-zinc-600 text-[10px] tracking-[0.5em] uppercase font-bold">
-          Pareekh Textiles &bull; Surat &bull; India
+          PAREKH Textiles &bull; Surat &bull; India
         </div>
       </div>
     </div>

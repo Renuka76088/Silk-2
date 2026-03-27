@@ -14,7 +14,7 @@ const CircularPage = () => {
     {
       id: "07",
       title: "Annual Silk Festival Sponsorship",
-      desc: "Pareekh Collective's participation and budget allocation for the upcoming National Textile Expo.",
+      desc: "PAREKH Collective's participation and budget allocation for the upcoming National Textile Expo.",
       date: "10 MAR",
       tag: "Marketing"
     },
@@ -54,7 +54,7 @@ const CircularPage = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-7xl md:text-9xl font-serif tracking-tighter leading-none"
           >
-            The <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-zinc-600">Pareek</span> <br />
+            The <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-zinc-600">Parekh</span> <br />
             <span className="italic font-light text-amber-500/90">Circular</span>
           </motion.h1>
         </header>
@@ -141,7 +141,7 @@ const CircularPage = () => {
             <Gavel size={20} className="rotate-12" />
           </div>
           <p className="text-[10px] tracking-[1em] text-zinc-700 uppercase font-bold">
-            Pareekh Collective &bull; Digital Heritage
+            PAREKH Collective &bull; Digital Heritage
           </p>
         </footer>
       </div>

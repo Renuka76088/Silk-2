@@ -13,7 +13,7 @@ const Contact = () => {
       <section className="py-24 md:py-32 px-6 text-center relative">
         <div className="relative max-w-5xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-light tracking-widest text-amber-50 mb-8 leading-tight">
-            Connect with Pareekh Textile
+            Connect with PAREKH Textile
           </h1>
           <p className="text-xl md:text-2xl text-amber-200/80 font-light max-w-4xl mx-auto leading-relaxed">
             Just as the gentle touch of pure mulberry silk opens the heart… we listen to every word, enquiry, or vision with the same care and attention.  
@@ -40,7 +40,7 @@ const Contact = () => {
   allowFullScreen
   loading="lazy"
   referrerPolicy="no-referrer-when-downgrade"
-  title="Pareekh Textile - Surat"
+  title="PAREKH Textile - Surat"
 ></iframe>
 
             </div>
@@ -59,8 +59,8 @@ const Contact = () => {
                 <ul className="space-y-6 text-left text-gray-200 text-lg">
                   <li className="flex items-center">
                     <Mail className="text-amber-400 mr-4 h-6 w-6" />  {/* Professional email icon */}
-                    <a href="mailto:hello@pareekhtextile.com" className="hover:text-amber-200 transition-colors">
-                      hello@pareekhtextile.com
+                    <a href="mailto:info@parekhsilk.com" className="hover:text-amber-200 transition-colors">
+                      info@parekhsilk.com
                     </a>
                   </li>
                   <li className="flex items-center">
@@ -83,7 +83,7 @@ const Contact = () => {
               {/* Social Links – Professional */}
               <div className="flex justify-center md:justify-start gap-10">
                 <a 
-                  href="https://wa.me/919876543210?text=Hello%20Pareekh%20Textile" 
+                  href="https://wa.me/919876543210?text=Hello%20PAREKH%20Textile" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-amber-200 hover:text-amber-100 transition-colors text-lg font-medium uppercase tracking-wider flex items-center gap-2"
@@ -91,7 +91,7 @@ const Contact = () => {
                   <MessageSquare className="h-5 w-5" /> WhatsApp  {/* Message icon as proxy for WhatsApp */}
                 </a>
                 <a 
-                  href="https://instagram.com/pareekhtextile" 
+                  href="https://instagram.com/PAREKHtextile" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-amber-200 hover:text-amber-100 transition-colors text-lg font-medium uppercase tracking-wider flex items-center gap-2"

@@ -36,6 +36,8 @@ const Header = () => {
   ];
 
   return (
+    <>
+    
     <header className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-xl border-b border-amber-900/10 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
         {/* Logo */}
@@ -154,6 +156,7 @@ const Header = () => {
         </button>
       </div>
 
+
       {/* Mobile Slide-down Menu */}
       <div
         className={`lg:hidden fixed inset-x-0 top-0 bg-black/95 backdrop-blur-xl transition-all duration-700 ease-in-out overflow-hidden z-40
@@ -209,6 +212,29 @@ const Header = () => {
         </div>
       </div>
     </header>
+    {/* WhatsApp Floating Button */}
+<div className="fixed bottom-6 right-6 z-[200]">
+  <a
+    href="https://wa.me/91111111111"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="relative bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110"
+  >
+    {/* Icon */}
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 32 32"
+      className="w-7 h-7 fill-white"
+    >
+      <path d="M16.001 2.667c-7.364 0-13.333 5.97-13.333 13.334 0 2.353.615 4.654 1.783 6.683L2.667 29.333l6.823-1.756a13.25 13.25 0 006.511 1.689h.005c7.364 0 13.333-5.97 13.333-13.334 0-3.568-1.39-6.923-3.92-9.453a13.254 13.254 0 00-9.418-3.812zm0 24.001h-.004a10.96 10.96 0 01-5.583-1.52l-.401-.238-4.049 1.043 1.08-3.949-.26-.41a10.96 10.96 0 01-1.68-5.89c0-6.077 4.946-11.023 11.024-11.023 2.944 0 5.709 1.146 7.791 3.229a10.947 10.947 0 013.233 7.793c-.002 6.077-4.948 11.023-11.022 11.023zm6.046-8.209c-.331-.165-1.956-.965-2.259-1.074-.302-.11-.523-.165-.744.165-.221.331-.854 1.074-1.048 1.295-.192.221-.386.248-.717.083-.331-.165-1.396-.514-2.66-1.64-.983-.877-1.647-1.959-1.84-2.29-.192-.331-.02-.51.145-.675.149-.148.331-.386.496-.579.165-.192.221-.331.331-.552.11-.221.055-.414-.028-.579-.083-.165-.744-1.793-1.02-2.457-.268-.643-.54-.556-.744-.566-.192-.009-.414-.011-.634-.011-.221 0-.579.083-.883.414-.302.331-1.157 1.131-1.157 2.758 0 1.627 1.186 3.198 1.352 3.419.165.221 2.334 3.566 5.655 5.001.79.341 1.406.545 1.887.697.793.252 1.514.217 2.084.132.636-.095 1.956-.799 2.231-1.57.275-.771.275-1.433.192-1.57-.082-.137-.302-.221-.633-.386z"/>
+    </svg>
+
+    {/* Pulse Animation */}
+    <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-30 animate-ping"></span>
+  </a>
+</div>
+
+    </>
   );
 };
 

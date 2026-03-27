@@ -97,7 +97,7 @@ const AuctionPage = () => {
             <form onSubmit={handleBidSubmit} className="space-y-6 relative z-10">
               <div className="mb-4">
                 <h3 className="text-2xl font-serif">Place Official Bid</h3>
-                <p className="text-zinc-400 text-[10px] uppercase tracking-widest mt-1 font-bold italic">Secure Entry • Pareekh Collective</p>
+                <p className="text-zinc-400 text-[10px] uppercase tracking-widest mt-1 font-bold italic">Secure Entry • PAREKH Collective</p>
               </div>
 
               {/* Input Fields */}

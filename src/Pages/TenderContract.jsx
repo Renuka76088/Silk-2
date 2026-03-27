@@ -60,7 +60,7 @@ const TenderPage = () => {
             animate={{ opacity: 1 }}
             className="text-zinc-500 max-w-sm text-sm leading-relaxed mb-4"
           >
-            Join the legacy of Pareekh Textiles. We invite professional weavers, suppliers, and logistics partners to participate in our upcoming projects.
+            Join the legacy of PAREKH Textiles. We invite professional weavers, suppliers, and logistics partners to participate in our upcoming projects.
           </motion.p>
         </div>
       </section>
@@ -110,7 +110,7 @@ const TenderPage = () => {
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div className="space-y-8">
             <h2 className="text-4xl font-serif">Compliance & <br/>Quality Assurance</h2>
-            <p className="text-zinc-400 leading-relaxed">Every contract with Pareekh Textiles follows strict ISO and Textile Committee standards of India. We value transparency and long-term professional growth.</p>
+            <p className="text-zinc-400 leading-relaxed">Every contract with PAREKH Textiles follows strict ISO and Textile Committee standards of India. We value transparency and long-term professional growth.</p>
             
             <div className="grid grid-cols-2 gap-8">
               <div className="flex flex-col gap-2">
@@ -139,7 +139,7 @@ const TenderPage = () => {
 
       {/* Footer Branding */}
       <footer className="py-12 text-center border-t border-zinc-900 mt-20">
-        <p className="text-[10px] text-zinc-700 font-bold tracking-[0.8em] uppercase italic">Pareekh Collective &bull; Gujarat Hub</p>
+        <p className="text-[10px] text-zinc-700 font-bold tracking-[0.8em] uppercase italic">PAREKH Collective &bull; Gujarat Hub</p>
       </footer>
     </div>
   );
