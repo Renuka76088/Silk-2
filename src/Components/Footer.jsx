@@ -109,7 +109,7 @@ const Footer = () => {
           <div>
             <h3 className="text-amber-100 font-medium uppercase text-xs mb-8" style={{fontSize:'20px'}}>B2B Solutions</h3>
             <ul className="space-y-4 text-sm text-gray-400" style={{fontSize:'17px'}}>
-              {['Trade Enquiry', 'E-Quotation', 'Bulk Orders', 'Textile Associates', 'Global Export'].map((item) => (
+              {['Trade Enquiry', 'e-Quotation', 'Bulk Orders', 'Textile Associates', 'Global Export'].map((item) => (
                 <li key={item}>
                   <Link to="#" className="hover:text-amber-200 transition-colors duration-300 flex items-center gap-2">
                     {item}
@@ -125,7 +125,7 @@ const Footer = () => {
             <div className="space-y-4 text-sm text-gray-400">
               <p className="flex items-start gap-3" style={{fontSize:'17px'}}>
                 <FaMapMarkerAlt className="text-amber-400 mt-1 shrink-0" />
-                <span>Ring Road, Surat, <br />Gujarat - 395002, India</span>
+                <span> Surat, Gujarat - India</span>
               </p>
               <p className="flex items-center gap-3">
                 <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>

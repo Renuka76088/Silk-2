@@ -32,20 +32,21 @@ const Contact = () => {
         
 
             <div className="rounded-3xl overflow-hidden border border-amber-900/40 shadow-xl shadow-amber-900/20 max-w-5xl mx-auto">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117667.7!2d75.78491!3d22.719569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fcad1c0829f7%3A0x4b3b0e3e8e3e8e3e!2sIndore%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1730000000000!5m2!1sen!2sin"
-                width="100%"
-                height="500"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Pareekh Textile - Indore"
-              ></iframe>
+            <iframe
+  src="https://www.google.com/maps?q=Surat,Gujarat,India&output=embed"
+  width="100%"
+  height="500"
+  style={{ border: 0 }}
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+  title="Pareekh Textile - Surat"
+></iframe>
+
             </div>
 
             <p className="mt-8 text-amber-200/80 text-lg font-light italic">
-              Visit our Indore location or connect from anywhere in the world.
+              Visit our SURAT, GJ location or connect from anywhere in the world.
             </p>
           </div>
 
@@ -65,12 +66,12 @@ const Contact = () => {
                   <li className="flex items-center">
                     <Phone className="text-amber-400 mr-4 h-6 w-6" />  {/* Clean phone icon */}
                     <a href="tel:+919876543210" className="hover:text-amber-200 transition-colors">
-                      +91 98765 43210
+                      +9111111 11111
                     </a>
                   </li>
                   <li className="flex items-center">
                     <MapPin className="text-amber-400 mr-4 h-6 w-6" />  {/* Location pin icon */}
-                    <span>Indore, Madhya Pradesh, India</span>
+                    <span>SURAT, GJ, India</span>
                   </li>
                   <li className="flex items-center">
                     <Clock className="text-amber-400 mr-4 h-6 w-6" />  {/* Clock icon for hours */}
