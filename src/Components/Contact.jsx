@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Clock, MessageSquare } from 'lucide-react';  // Professional minimal icons
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -80,25 +81,33 @@ const Contact = () => {
                 </ul>
               </div>
 
-              {/* Social Links – Professional */}
-              <div className="flex justify-center md:justify-start gap-10">
-                <a 
-                  href="https://wa.me/919876543210?text=Hello%20PAREKH%20Textile" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-amber-200 hover:text-amber-100 transition-colors text-lg font-medium uppercase tracking-wider flex items-center gap-2"
-                >
-                  <MessageSquare className="h-5 w-5" /> WhatsApp  {/* Message icon as proxy for WhatsApp */}
-                </a>
-                <a 
-                  href="https://instagram.com/PAREKHtextile" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-amber-200 hover:text-amber-100 transition-colors text-lg font-medium uppercase tracking-wider flex items-center gap-2"
-                >
-                  Instagram  {/* Instagram ko text + optional custom icon, lekin simple rakha */}
-                </a>
-              </div>
+           {/* Social Links – Professional */}
+<div className="flex justify-center md:justify-start gap-10">
+  
+  {/* WhatsApp */}
+  <a 
+    href="https://wa.me/919876543210?text=Hello%20PAREKH%20Textile" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="text-amber-200 hover:text-amber-100 transition-colors text-lg font-medium uppercase tracking-wider flex items-center gap-2"
+  >
+    <FaWhatsapp className="h-5 w-5" />
+    WhatsApp
+  </a>
+
+  {/* Instagram */}
+  <a 
+    href="https://instagram.com/PAREKHtextile" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="text-amber-200 hover:text-amber-100 transition-colors text-lg font-medium uppercase tracking-wider flex items-center gap-2"
+  >
+    <FaInstagram className="h-5 w-5" />
+    Instagram
+  </a>
+
+</div>
+
             </div>
 
             {/* Right: Form - unchanged but added MessageSquare icon in heading */}
